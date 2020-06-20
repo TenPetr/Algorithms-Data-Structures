@@ -1,4 +1,4 @@
-public class Algorithms {
+public class Main {
 
      public static void main(String []args){
         int numbers[] = {12, 13, 15, 16, 18, 20, 22, 23, 26};
