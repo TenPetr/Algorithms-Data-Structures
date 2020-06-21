@@ -15,6 +15,9 @@ class Main {
   }
 }
 
+/*
+Linear search will check every element in the list. This solution is very inefficient.
+*/
 class LinearSearch {
   public static int search(int numbers[], int desiredNumber) {
     for (int i = 0; i < numbers.length; i++) {

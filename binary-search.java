@@ -22,12 +22,16 @@ class BinarySearch {
         int end = numbers.length - 1;
         
         while (start <= end) {
+
+	    // Calculate middle index
             int middle = start + (end - start) / 2;
 
+	    // Check if desiredNumber is present at middle
             if (numbers[middle] == desiredNumber) {
                 return middle; 
             }
 
+	    // If desiredNumber is greater, ignore left half, else ignore right half
             if (numbers[middle] > desiredNumber) { 
                 end = middle - 1;
             } else { 
@@ -35,6 +39,7 @@ class BinarySearch {
             }
         }
         
+	// If we reach here, then element was not present 
         return -1;
     }
 }
